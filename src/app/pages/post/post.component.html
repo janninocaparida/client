@@ -1,0 +1,31 @@
+<mat-grid-list cols="4" rowHeight="2:1">
+
+    @for (post of posts; track $index){
+    <mat-grid-tile>
+        <mat-card appearance="outlined">
+     <mat-card-header>
+            <mat-card-title>{{  post.title  }}</mat-card-title>
+    </mat-card-header>  
+    <br /> 
+    <mat-card-content> 
+        {{ post.content }}
+    </mat-card-content>
+    <mat-card-actions align="end">
+        <button mat-icon-button>
+        <mat-icon>edit</mat-icon>
+        </button>
+    </mat-card-actions>
+    </mat-card>
+    </mat-grid-tile>
+}
+    </mat-grid-list>
+
+    
+    
+   
+    
+      
+
+  
+
+  
